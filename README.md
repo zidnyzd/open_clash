@@ -1,5 +1,6 @@
 **Table of Contents**
 
+- [Openclash Config](#openclash-config)
 - [Features](#features)
 - [Persiapan](#persiapan)
   - [Modem/WAN](#modemwan)
@@ -42,9 +43,8 @@
 # Openclash Config
 
 OpenClash Config untuk VVIP IPTUNNELS
-- [Buy VVIP IPTUNNELS](https://linktr.ee/iptunnelscom)
-- [Join Telegram](https://t.me/+O08-QK6VNXU5NzU1)
-- [Requests Rules](https://github.com/malikshi/open_clash/issues/new/choose)
+- [Join Telegram](https://t.me/+6287758388833)
+- [Requests Rules](https://github.com/afanbombom/open_clash/issues/new/choose)
 
 # Features
 
