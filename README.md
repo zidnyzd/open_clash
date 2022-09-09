@@ -1,6 +1,5 @@
 **Table of Contents**
 
-- [Openclash Config](#openclash-config)
 - [Features](#features)
 - [Persiapan](#persiapan)
   - [Modem/WAN](#modemwan)
