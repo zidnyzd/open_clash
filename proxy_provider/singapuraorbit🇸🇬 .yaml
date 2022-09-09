@@ -1,5 +1,5 @@
 proxies:
-- name: CLOUDFRONT ORBIT
+- name: CLOUDFRONT GITHUB ORBIT
   type: vmess
   server: bombomonly.wun.my.id
   port: 443
@@ -14,7 +14,7 @@ proxies:
   grpc-opts:
     grpc-service-name: vmess-grpc
   interface-name: usb0
-- name: NEO MELBI ORBIT
+- name: NEO MELBI GITHUB ORBIT
   type: vmess
   server: bombomonly.wun.my.id
   port: 80
