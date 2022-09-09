@@ -1,5 +1,5 @@
 proxies:
-- name: COK IDC VIP MIFI
+- name: COK IDC GITHUB MIFI
   type: vmess
   server: bombomonly.wun.my.id
   port: 80
@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: idc-vvip.cokkoecok.my.id
   interface-name: wwan0
-- name: NEO SANU MIFI
+- name: NEO SANU GITHUB MIFI
   type: vmess
   server: bombomonly.wun.my.id
   port: 80
