@@ -1,1 +1,2 @@
-# open_clash
+proxy_provider
+rule_provider
