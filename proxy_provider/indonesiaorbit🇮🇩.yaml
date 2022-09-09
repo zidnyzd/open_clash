@@ -18,7 +18,7 @@ proxies:
   interface-name: usb0
 - name: NUSA GITHUB ORBIT
   type: vmess
-  server: bombomonly.wun.my.id
+  server: xraxc.cokkoecok.my.id
   port: 80
   uuid: ec58117a-0d16-418f-b064-32352f297f8b
   alterId: 0
