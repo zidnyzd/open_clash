@@ -1,5 +1,5 @@
 proxies:
-- name: KELOTPRONT MIFI
+- name: KELOTPRONT GITHUB MIFI
   type: vmess
   server: bombomonly.wun.my.id
   port: 443
@@ -14,7 +14,7 @@ proxies:
   grpc-opts:
     grpc-service-name: vmess-grpc
   interface-name: wwan0
-- name: BIMEL OEN MIFI
+- name: BIMEL GITHUB OEN MIFI
   type: vmess
   server: bombomonly.wun.my.id
   port: 80
