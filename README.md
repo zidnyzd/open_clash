@@ -42,7 +42,7 @@
 # Openclash Config
 
 OpenClash Config untuk VVIP IPTUNNELS
-- [Join Telegram](https://t.me/papamuda44)
+- [Join Telegram](https://t.me/convigocbombom)
 - [Requests Rules](https://github.com/afanbombom/open_clash/issues/new/choose)
 
 # Features
