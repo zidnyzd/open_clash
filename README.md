@@ -85,7 +85,7 @@ Untuk menentukan interface-name modem/WAN bisa melalui `LuCi > Network >> Interf
 
 <img src="https://github.com/afanbombom/open_clash/blob/main/asset/interfacename.jpg" border="0">
 
-Perhatikan pada gambar interface di atas, berikut adalah detailnya,
+Perhatikan pada gambar interface di atas, berikut adalah detailnya:
 
 MODEM | INTERFACE-NAME
 ------------ | -------------
