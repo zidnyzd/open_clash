@@ -8,6 +8,7 @@
 - [Openclash](#openclash)
   - [Download Config](#download-config)
   - [Uploud Config](#uploud-config)
+    - [Cara Uploud Backup Convig Openclash](#tutorial-uploud-convig-openclash)
   - [Setting Multi-WAN OC](#setting-multi-wan-oc)
   - [2 Modem/WAN](#2-modemwan)
   - [1 Modem/WAN](#1-modemwan)
@@ -114,6 +115,8 @@ Plugin ini adalah klien Clash yang bisa dijalankan di OpenWrt. Kompatibel dengan
 (https://github.com/afanbombom/open_clash/tree/main/Convig%20Open%20Clash/Pengguna%202%20Modem/Uploud%20Manual)
 
 ## Uploud Config
+
+* Tutorial uploud backup Openclash
 
 ## Cara Mengisi Akun
 
