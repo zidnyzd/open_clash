@@ -60,15 +60,15 @@ OpenClash Config untuk VVIP IPTUNNELS
 
 # Persiapan
 
-Openclash config yang disediakan pada repositori ini dikhususkan untuk pengguna VVIP IPTUNNELS dan pengguna openclash di Indonesia.Silahkan untuk membaca baik - baik tutorial yang diberikan, dan jika ada pertanyaan silahkan open issues atau chat digroup telegram (https://t.me/papamuda44).
+Openclash config yang disediakan pada repositori ini dikhususkan untuk pengguna Tunnels Openclash yang belum bisa membuat convig sendiri. Silahkan untuk membaca baik - baik tutorial yang diberikan, dan jika ada pertanyaan silahkan open issues atau chat digroup telegram (https://t.me/convigocbombom).
 
 ## Modem/WAN
 
-Disini Pertama kalian tentuin berapa modem/router 4G atau WAN sebagai sumber internet yang akan digunakan. Secara Default Config ini menggunakan 2 Modem sebagai berikut:
+Pertama-tama kalian harus tentuin berapa modem/router 4G atau WAN sebagai sumber internet yang akan digunakan. Sebagai contoh saya di Config ini menggunakan 2 Modem sebagai berikut:
 
 ```conf
-Modem ORBIT STAR2   : WAN 1 /usb0
-Modem E5372s        : WAN 2 /wwan0
+Modem ORBIT STAR2   : WAN 1
+Modem E5372s        : WAN 2
 ```
 
 Modem tersebut mempunyai fungsi masing-masing agar memungkinkan mendapatkan performa internet dengan baik.
@@ -98,50 +98,45 @@ Plugin ini adalah klien Clash yang bisa dijalankan di OpenWrt. Kompatibel dengan
 
 ## Download Config
 
-=> Untuk pengguna 2 modem gunakan convig dibawah ini:
+==> Untuk pengguna 1 modem bisa langsung gunakan backup convig dibawah ini:
 
-(https://github.com/afanbombom/open_clash/blob/main/CONVIG/Backup-OpenClash-BOMBOM2.tar.gz)
+(https://github.com/afanbombom/open_clash/blob/main/Convig%20Open%20Clash/Pengguna%202%20Modem/Uploud%20Backup%20Openclash/Backup-OpenClash-BOMBOM2.tar.gz)
 
-## Setting Multi-WAN OC
+=> Atau kalian juga bisa uploud secara manual dan download bahannya di bawah ini:
 
-Setelah menentukan jumlah modem/WAN yang akan digunakan ketika setting Multi-WAN di Openclash. Kita akan jelaskan jika menggunakan 2 modem/wan dan jika satu modem/wan.
+(https://github.com/afanbombom/open_clash/tree/main/Convig%20Open%20Clash/Pengguna%201%20Modem/Uploud%20Manual)
 
-## 2 Modem/WAN
+==> Untuk pengguna 2 modem bisa langsung gunakan backup convig dibawah ini:
 
-Jika menggunakan 2 modem/WAN kita anggap modem tersebut dengan details berikut:
+(https://github.com/afanbombom/open_clash/blob/main/Convig%20Open%20Clash/Pengguna%202%20Modem/Uploud%20Backup%20Openclash/Backup-OpenClash-BOMBOM2.tar.gz)
 
-MODEM | INTERFACE-NAME
------------- | -------------
-WAN A | usb0
-WAN B | wwan0
+=> Atau kalian juga bisa uploud secara manual dan download bahannya di bawah ini:
 
-## 1 Modem/WAN
-
-Jika kalian hanya menggunakan satu modem hapus hal-hal yang berkaitan dengan `Direct WAN B`
+(https://github.com/afanbombom/open_clash/tree/main/Convig%20Open%20Clash/Pengguna%202%20Modem/Uploud%20Manual)
 
 ## Cara Mengisi Akun
 
 Cara mengisi akun supaya load-balance pada tiap proxy-provider berjalan dengan baik. Sangat direkomendasikan tiap proxy-provider diisi dengan 2 akun dengan contoh sebagai berikut:
 
-* untuk file proxy-provider [indonesiaorbit.yaml](https://github.com/afanbombom/open_clash/blob/main/proxy_provider/indonesiaorbit.yaml)
+* untuk file proxy-provider [indonesiaorbit.yaml](https://raw.githubusercontent.com/afanbombom/open_clash/main/Convig%20Open%20Clash/Pengguna%202%20Modem/Uploud%20Manual/proxy_provider/indonesiaorbit.yaml)
 
 NAMA | ISP | INTERFACE-NAME
 --------------- | ----------- | -------------
 INDONESIA ORBIT | SERVER INDO | usb0
 
-* untuk file proxy-provider [singapuraorbit.yaml](https://github.com/afanbombom/open_clash/blob/main/proxy_provider/singapuraorbit.yaml)
+* untuk file proxy-provider [singapuraorbit.yaml](https://raw.githubusercontent.com/afanbombom/open_clash/main/Convig%20Open%20Clash/Pengguna%202%20Modem/Uploud%20Manual/proxy_provider/singapuraorbit.yaml)
 
 NAMA | ISP | INTERFACE-NAME
 --------------- | ---------------- | -------------
 SINGAPURA ORBIT | SERVER SINGAPURA | usb0
 
-* untuk file proxy-provider [indonesiamifi.yaml](https://github.com/afanbombom/open_clash/blob/main/proxy_provider/indonesiamifi.yaml)
+* untuk file proxy-provider [indonesiamifi.yaml](https://raw.githubusercontent.com/afanbombom/open_clash/main/Convig%20Open%20Clash/Pengguna%202%20Modem/Uploud%20Manual/proxy_provider/indonesiamifi.yaml)
 
 NAMA | ISP | INTERFACE-NAME
 -------------- | ----------- | -------------
 INDONESIA MIFI | SERVER INDO | wwan0
 
-* untuk file proxy-provider [singapuramifi.yaml](https://github.com/afanbombom/open_clash/blob/main/proxy_provider/singapuramifi.yaml)
+* untuk file proxy-provider [singapuramifi.yaml](https://raw.githubusercontent.com/afanbombom/open_clash/main/Convig%20Open%20Clash/Pengguna%202%20Modem/Uploud%20Manual/proxy_provider/singapuramifi.yaml)
 
 NAMA | ISP | INTERFACE-NAME
 -------------- | ---------------- | -------------
@@ -183,16 +178,6 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name!
     early-data-header-name: Sec-WebSocket-Protocol
   interface-name: usb0
 ```
-
-### Edit Files Proxy Provider
-
-Mengisi akun tunnel pada 4 files pada folder proxy_provider yang terdiri dari akun server indonesia, akun server singapura.
-Fungsi dari proxy_provider diatas:
-* singapuraorbit.yaml, singapuramifi.yaml Gunakan akun VVIP berlokasi SINGAPORE untuk memperoleh speed/traffic yang lebih bagus.
-* indonesiaorbit.yaml, singaapuramifi.yaml Gunakan akun VVIP berlokasi INDONESIA untuk keperluan akses websites/marketplace/live stream apps/Video on Demand yang mengharuskan memakai IP Address Publik Indonesia.
-
-Keterangan lebih lanjut:
-Karena config akan disetting dengan sistem fallback dimana jika proxy list pertama gagal maka akan menggunakan proxy list kedua, jika proxy list pertama dan kedua gagal maka akan menggunakan DIRECT, namun jika 30 detik kemudian proxy list pertama kembali aktif maka proxy list urutan pertama akan digunakan, sehingga sangat menguntungkan karena tidak perlu memikirkan jika salah satu proxy gagal.
 
 #### Shadowsocks
 
@@ -388,6 +373,16 @@ Karena config akan disetting dengan sistem fallback dimana jika proxy list perta
     grpc-service-name: iptunnelstrojangrpc
   interface-name: eth1
 ```
+
+### Edit Files Proxy Provider
+
+Mengisi akun tunnel pada 4 files pada folder proxy_provider yang terdiri dari akun server indonesia, akun server singapura.
+Fungsi dari proxy_provider diatas:
+* singapuraorbit.yaml, singapuramifi.yaml Gunakan akun VVIP berlokasi SINGAPORE untuk memperoleh speed/traffic yang lebih bagus.
+* indonesiaorbit.yaml, singaapuramifi.yaml Gunakan akun VVIP berlokasi INDONESIA untuk keperluan akses websites/marketplace/live stream apps/Video on Demand yang mengharuskan memakai IP Address Publik Indonesia.
+
+Keterangan lebih lanjut:
+Convig bisa ditambahkan dengan pilihan sistem fallback dimana jika proxy list pertama gagal maka akan menggunakan proxy list kedua, jika proxy list pertama dan kedua gagal maka akan menggunakan DIRECT, namun jika 30 detik kemudian proxy list pertama kembali aktif maka proxy list urutan pertama akan digunakan, sehingga sangat menguntungkan karena tidak perlu memikirkan jika salah satu proxy gagal.
 
 # Rule Direct/Bypassed Connection
 
