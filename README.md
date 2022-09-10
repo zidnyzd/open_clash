@@ -41,6 +41,8 @@
     - [Toggle Traffic GLOBAL](#toggle-traffic-global)
   - [Config](#config)
 - [Test Adblock 100%](#test-adblock-100)
+- [Frimeware Yang Saya Gunakan](#frimeware-yang-saya-gunakan)
+- [Penutup](#penutup)
 
 # Openclash Config
 
@@ -61,7 +63,7 @@
 
 # Persiapan
 
-Openclash config yang disediakan pada repositori ini dikhususkan untuk pengguna Tunnels Openclash yang belum bisa membuat convig sendiri. Silahkan untuk membaca baik - baik tutorial yang diberikan, dan jika ada pertanyaan silahkan open issues atau chat digroup telegram (https://t.me/convigocbombom).
+Openclash config yang disediakan pada repositori ini dikhususkan untuk pengguna Tunnels Openclash yang belum bisa membuat convig sendiri, atau masih gagal dan kesulitan dalam menguploud file convig dan juga bagi yang masih gagal setting Openclash. Silahkan untuk membaca baik - baik tutorial yang kami diberikan, dan jika ada pertanyaan silahkan open issues atau chat digroup telegram (https://t.me/convigocbombom).
 
 ## Modem/WAN
 
@@ -443,90 +445,14 @@ Hasil settingan pada global setting akan meng-overide settingal awal pada file m
 
 ### Operation Mode
 
-* Operation Mode **SWITCH PAGE TO FAKE IP MODE** terlebih dahulu.
+* Kalian dapat memilih Operation Mode **SWITCH PAGE TO FAKE IP MODE** atau **SWITCH PAGE TO REDIR-HOST MODE**
 * Ceklist/centang opsi sesuai gambar berikut:
 
 <img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/operation-mode.jpg" border="0">
 
-
-### DNS Setting
-
-* Ceklist/Centang sesuai gambar:
-
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/dnssetting.jpg" border="0">
-
-* Isi Fallback-filter
-
-Perlu diedit isi fallback-filternya supaya mendapatkan hostname di Yacd Connection log. isi fallback-filter dengan ini.
-
-```yaml
-fallback-filter:
-  geoip: true
-  geoip-code: ID
-  ipcidr:
-    - 0.0.0.0/8
-    - 10.0.0.0/8
-    - 100.64.0.0/10
-    - 127.0.0.0/8
-    - 169.254.0.0/16
-    - 172.16.0.0/12
-    - 192.0.0.0/24
-    - 192.0.2.0/24
-    - 192.88.99.0/24
-    - 192.168.0.0/16
-    - 198.18.0.0/15
-    - 198.51.100.0/24
-    - 203.0.113.0/24
-    - 224.0.0.0/4
-    - 240.0.0.0/4
-    - 255.255.255.255/32
-  domain:
-    - "+.google.com"
-    - "+.facebook.com"
-    - "+.youtube.com"
-    - "+.githubusercontent.com"
-    - "+.googlevideo.com"
-    - "+.msftconnecttest.com"
-    - "+.msftncsi.com"
-    - msftconnecttest.com
-    - msftncsi.com
-    - "+.*"
-```
-
-* Tambahkan Server Group name server dan fallback masing masing 2 seperti pada gambar berikut.
-
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/dns-fallback.jpg" border="0">
-
-DNS Server Group | DNS Server Address | DNS Server Port | DNS Server Type
------------- | ------------- | ------------- | -------------
-NameServer | dns.quad9.net/dns-query |   | HTTPS
-NameServer | 9.9.9.9 | 853 | TLS
-FallBack | dns.quad9.net/dns-query |   | HTTPS
-FallBack | 149.112.112.112 | 853 | TLS
-
-### GEOIP Update
-
-Pada rule_indo.yaml menggunakan geoip:ID dimana jika IP tersebut bercode/berasal negara Indonesia maka akan menggunakan trafficIndo.yaml dan itu membutuhkan mmdb yang selalu updated sebagai data geoip seluruh negara.
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/geoip-update.jpg" border="0">
-
 ## Manage Config
 
 Mulai dari versi v0.44.22-beta pada branch dev, menu Manage Config support dengan fungsi create,edit,delete file jadi tidak perlu login ssh untuk edit via terminal router openwrt. Tidak membutuhkan tiny fm (file manager) karena config editor built-in openclash terdapat validator config jika terdapat kesalahan/error saat melakukan pengeditan.
-
-### Import Main.yaml
-
-Setelah melakukan pengeditan main.yaml maka kita import main.yaml via Manage Config. Dan khusus main.yaml jangan import/edit melalui winscp/sftp.
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/main-upload.jpg" border="0">
-
-### Import Proxy Provider
-
-Jika Semua file pada folder proxy_provider yang terdiri dari vvip-id.yaml, vvip-sg.yaml, vvip-game.yaml yang sudah diisi dengan akun maka selanjutnya import file-file tersebut pada **Upload File Type : Proxy Provider File**.
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/proxy-upload.jpg" border="0">
-
-### Import Rule Provider
-
-traffic direct/bypass sudah disikan ke rule_direct.yaml maka bisa langsung import semua files pada folder rule_provider pada **Upload File Type : Rule Provider File**.
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/rule-upload.jpg" border="0">
 
 ## Overviews
 
@@ -561,10 +487,6 @@ Kita akan mengatur toggle/pilihan proxies yang kan digunakan tiap proxy-groups.
 
 <img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/ads.jpg" border="0">
 
-### Toggle TrafficP0rn
-
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/adlt.jpg" border="0">
-
 ### Toggle Traffic GLOBAL
 Untuk pertama kali start openclash maka harus setting proxies `GLOBAL` ke traffic proxy-groups `Umum`.
 <img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/yacd-proxies-global.jpg" border="0">
@@ -581,3 +503,24 @@ Silahkan test rules adblock melalui [https://d3ward.github.io/toolz/adblock.html
 
 Hasil test:
 <img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/d3ward.jpg" border="0">
+
+# Frimeware yang saya gunakan
+
+Frimeware yang saya gunakan adalah frimeware yang di build oleh panutan saya OM REYRE, yang kemudian ada beberapa bagian yang saya mod dan edit.
+Bagi yang ingin menggunakan frimeware yang saya pakai bisa download di Grub Telegram saya (https://t.me/convigocbombom)
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/overview.jpg" border="0">
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/openclash.jpg" border="0">
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/netmonitor.jpg" border="0">
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/yacd1.jpg" border="0">
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/yacd2.jpg" border="0">
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/traffick.jpg" border="0">
+
+# PENUTUP
+
+Tentunya Config dan juga tutorial yang saya buat ini masih jauh dari kesempurnaan. Terima kasih kepada semua Master, Suhu, dan juga rekan-rekan yang telah banyak memberikan ilmunya sehingga saya dapat membuat tutorial Openclash sesuai sepengetahuan saya di dalam repositori saya ini.
