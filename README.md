@@ -84,7 +84,7 @@ WAN 2 | INJECT XL AKRAB
 
 Untuk menentukan interface-name modem/WAN bisa melalui `LuCi > Network >> Interfaces` lihat gambar berikut dengan seksama.
 
-<img src="https://github.com/afanbombom/open_clash/blob/main/asset/interfacename.jpg" border="0">
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/interfacename.jpg" border="0">
 
 Perhatikan pada gambar interface di atas, berikut adalah detailnya:
 
