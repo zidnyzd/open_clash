@@ -507,7 +507,7 @@ Hasil test:
 # Frimeware yang saya gunakan
 
 Frimeware yang saya gunakan adalah frimeware yang di build oleh panutan saya OM REYRE, yang kemudian ada beberapa bagian yang saya mod dan edit.
-Bagi yang ingin menggunakan frimeware yang saya pakai bisa download di Grub Telegram saya (https://t.me/convigocbombom)
+Bagi yang ingin menggunakan frimeware yang saya pakai bisa atau ingin memberikan saran serta masukannya bisa bergabung Grub Telegram saya (https://t.me/convigocbombom)
 
 <img src="https://github.com/afanbombom/open_clash/blob/main/Asset/overview.jpg" border="0">
 
