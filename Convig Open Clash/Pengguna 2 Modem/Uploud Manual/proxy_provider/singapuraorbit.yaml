@@ -1,35 +1,37 @@
 proxies:
-- name: CLOUDFRONT ORBIT
+- name: (NAMA BEBAS)
   type: vmess
-  server: bombomonly.wun.my.id
-  port: 443
-  uuid: 0c47a8e6-d5cd-4c29-a02c-3fb4786307bb
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: true
-  servername: sgdo-deb.dfmlta.xyz
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vmess-grpc
-  interface-name: usb0
-- name: NEO MELBI ORBIT
-  type: vmess
-  server: bombomonly.wun.my.id
+  server: bug.andalanmu.com
   port: 80
-  uuid: 4a7e9aaf-07e6-46b0-98a5-c0ddfba0e804
+  uuid: c43d1e62-d33e-4146-b317-123456789
   alterId: 0
   cipher: auto
   udp: true
   skip-cert-verify: true
   tls: false
-  servername: melbi.nextvpn.cc
+  servername: (ganti dengan alamat server akunmu)
   network: ws
   ws-opts:
-    path: "/vpnneo"
+    path: "/path"
     headers:
-      Host: melbi.nextvpn.cc
+      Host: (ganti dengan alamat server akunmu)
+  interface-name: usb0
+- name: (NAMA BEBAS)
+  type: vmess
+  server: (ganti dengan alamat server akunmu)
+  port: 443
+  uuid: c43d1e62-d33e-4146-b317-123456789
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: bug.andalanmu.com
+  network: ws
+  ws-opts:
+    path: "/path"
+    headers:
+      Host: bug.andalanmu.com
   interface-name: usb0
 
 #CDN berarti BUG ada di setelah tulisan "server"
