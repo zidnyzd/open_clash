@@ -119,9 +119,15 @@ Plugin ini adalah klien Clash yang bisa dijalankan di OpenWrt. Kompatibel dengan
 
 ## Tutorial uploud backup convig Openclash:
 
-Cara Uploud Backup Convig Openclash adalah seperti contoh pada gambar dibawah ini:
+Cara Uploud Backup Convig Openclash adalah sebagai berikut:
 
-<img src="https://raw.githubusercontent.com/afanbombom/open_clash/main/assets/backup_openclash.jpg" border="0">
+* Langkah pertama buka Openclash kemudian masuk ke menu Convig Manage, uploud file backup yang telah kalian download seperti pada contoh gambar di bawah ini:
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/uploud_backup1.jpg" border="0">
+
+* Langkah kedua scroll ke bawah dan pilih COMMIT SETTINGS kemudian APPLY SETTINGS
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/uploud_backup2.jpg" border="0">
 
 ## Tutorial uploud file convig manual:
 
