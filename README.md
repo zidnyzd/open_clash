@@ -98,7 +98,8 @@ Plugin ini adalah klien Clash yang bisa dijalankan di OpenWrt. Kompatibel dengan
 
 ## Download Config
 
-File Download (https://github.com/afanbombom/open_clash/blob/main/CONVIG/Backup-OpenClash-BOMBOM2.tar.gz)
+=> Untuk pengguna 2 modem gunakan convig dibawah ini:
+(https://github.com/afanbombom/open_clash/blob/main/CONVIG/Backup-OpenClash-BOMBOM2.tar.gz)
 
 ## Setting Multi-WAN OC
 
