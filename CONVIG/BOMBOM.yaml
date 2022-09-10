@@ -1,0 +1,637 @@
+---
+proxy-groups:
+- name: AUTO INDO ORBIT
+  type: url-test
+  disable-udp: false
+  use:
+  - "INDONESIA ORBIT \U0001F1EE\U0001F1E9"
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+  tolerance: '150'
+- name: LB INDO ORBIT
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - "INDONESIA ORBIT \U0001F1EE\U0001F1E9"
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: AUTO SG ORBIT
+  type: url-test
+  disable-udp: false
+  use:
+  - "SINGAPURA ORBIT \U0001F1F8\U0001F1EC"
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+  tolerance: '150'
+- name: LB SG ORBIT
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - "SINGAPURA ORBIT \U0001F1F8\U0001F1EC"
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: AUTO INDO MIFI
+  type: url-test
+  disable-udp: false
+  use:
+  - "INDONESIA MIFI \U0001F1EE\U0001F1E9"
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+  tolerance: '150'
+- name: LB INDO MIFI
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - "INDONESIA MIFI \U0001F1EE\U0001F1E9"
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: AUTO SG MIFI
+  type: url-test
+  disable-udp: false
+  use:
+  - "SINGAPURA MIFI \U0001F1F8\U0001F1EC"
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+  tolerance: '150'
+- name: LB SG MIFI
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - "SINGAPURA MIFI \U0001F1F8\U0001F1EC"
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: AUTO INDO ALL
+  type: url-test
+  disable-udp: false
+  proxies:
+  - AUTO INDO ORBIT
+  - AUTO INDO MIFI
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+  tolerance: '150'
+- name: LB INDO ALL
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - LB INDO ORBIT
+  - LB INDO MIFI
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: AUTO SG ALL
+  type: url-test
+  disable-udp: false
+  proxies:
+  - AUTO SG ORBIT
+  - AUTO SG MIFI
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+  tolerance: '150'
+- name: LB SG ALL
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - LB SG ORBIT
+  - LB SG MIFI
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: ALL AUTO PING
+  type: url-test
+  disable-udp: false
+  proxies:
+  - AUTO INDO ALL
+  - AUTO SG ALL
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+  tolerance: '150'
+- name: ALL LOADBALANCE
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - LB INDO ALL
+  - LB SG ALL
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: MANUAL
+  type: select
+  disable-udp: false
+  use:
+  - "INDONESIA ORBIT \U0001F1EE\U0001F1E9"
+  - "INDONESIA MIFI \U0001F1EE\U0001F1E9"
+  - "SINGAPURA ORBIT \U0001F1F8\U0001F1EC"
+  - "SINGAPURA MIFI \U0001F1F8\U0001F1EC"
+- name: DIRECT ORBIT
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  interface-name: usb0
+- name: DIRECT MIFI
+  type: select
+  disable-udp: false
+  proxies:
+  - DIRECT
+  interface-name: wwan0
+- name: AUTO ALL DIRECT
+  type: url-test
+  disable-udp: false
+  proxies:
+  - DIRECT ORBIT
+  - DIRECT MIFI
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+  tolerance: '150'
+- name: LB DIRECT
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  proxies:
+  - DIRECT ORBIT
+  - DIRECT MIFI
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: "LOBBY-GAME \U0001F579️"
+  type: select
+  disable-udp: false
+  proxies:
+  - AUTO INDO ORBIT
+  - LB INDO ORBIT
+  - AUTO INDO MIFI
+  - LB INDO MIFI
+  - AUTO INDO ALL
+  - LB INDO ALL
+  - MANUAL
+  - DIRECT ORBIT
+  - DIRECT MIFI
+  - AUTO ALL DIRECT
+  - LB DIRECT
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: "PORT-GAMING \U0001F3AE"
+  type: select
+  disable-udp: false
+  proxies:
+  - AUTO INDO ORBIT
+  - LB INDO ORBIT
+  - AUTO INDO MIFI
+  - LB INDO MIFI
+  - AUTO INDO ALL
+  - LB INDO ALL
+  - MANUAL
+  - DIRECT ORBIT
+  - DIRECT MIFI
+  - AUTO ALL DIRECT
+  - LB DIRECT
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: "SOSMED \U0001F4E9"
+  type: select
+  disable-udp: false
+  proxies:
+  - AUTO INDO ALL
+  - LB INDO ALL
+  - AUTO SG ALL
+  - LB SG ALL
+  - ALL AUTO PING
+  - ALL LOADBALANCE
+  - MANUAL
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: SPEEDTEST ⚡
+  type: select
+  disable-udp: false
+  proxies:
+  - AUTO INDO ORBIT
+  - LB INDO ORBIT
+  - AUTO SG ORBIT
+  - LB SG ORBIT
+  - AUTO INDO MIFI
+  - LB INDO MIFI
+  - AUTO SG MIFI
+  - LB SG MIFI
+  - AUTO INDO ALL
+  - LB INDO ALL
+  - AUTO SG ALL
+  - LB SG ALL
+  - ALL LOADBALANCE
+  - MANUAL
+  - DIRECT ORBIT
+  - DIRECT MIFI
+  - AUTO ALL DIRECT
+  - LB DIRECT
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: "BROWSING \U0001F30F"
+  type: select
+  disable-udp: false
+  proxies:
+  - AUTO INDO ALL
+  - LB INDO ALL
+  - AUTO SG ALL
+  - LB SG ALL
+  - ALL AUTO PING
+  - ALL LOADBALANCE
+  - MANUAL
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: "STREAMING \U0001F4FA"
+  type: select
+  disable-udp: false
+  proxies:
+  - AUTO INDO ALL
+  - LB INDO ALL
+  - AUTO SG ALL
+  - LB SG ALL
+  - ALL AUTO PING
+  - ALL LOADBALANCE
+  - MANUAL
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: "TRAFFICKINDO \U0001F3E7"
+  type: select
+  disable-udp: false
+  proxies:
+  - AUTO INDO ORBIT
+  - LB INDO ORBIT
+  - AUTO INDO MIFI
+  - LB INDO MIFI
+  - AUTO INDO ALL
+  - LB INDO ALL
+  - ALL AUTO PING
+  - ALL LOADBALANCE
+  - MANUAL
+  - DIRECT ORBIT
+  - DIRECT MIFI
+  - AUTO ALL DIRECT
+  - LB DIRECT
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+- name: "WHATSAPP dan ZOOM \U0001F4E9"
+  type: select
+  disable-udp: false
+  proxies:
+  - AUTO INDO ORBIT
+  - LB INDO ORBIT
+  - AUTO INDO MIFI
+  - LB INDO MIFI
+  - AUTO INDO ALL
+  - LB INDO ALL
+  - ALL AUTO PING
+  - ALL LOADBALANCE
+  - MANUAL
+  - DIRECT ORBIT
+  - DIRECT MIFI
+  - AUTO ALL DIRECT
+  - LB DIRECT
+  url: http://www.gstatic.com/generate_204
+  interval: '99'
+proxy-providers:
+  "INDONESIA ORBIT \U0001F1EE\U0001F1E9":
+    type: http
+    path: "./proxy_provider/INDONESIA ORBIT \U0001F1EE\U0001F1E9.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/proxy_provider/indonesiaorbit%20%F0%9F%87%AE%F0%9F%87%A9.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 99
+  "INDONESIA MIFI \U0001F1EE\U0001F1E9":
+    type: http
+    path: "./proxy_provider/INDONESIA MIFI \U0001F1EE\U0001F1E9.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/proxy_provider/indonesiamifi%F0%9F%87%AE%F0%9F%87%A9.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 99
+  "SINGAPURA ORBIT \U0001F1F8\U0001F1EC":
+    type: http
+    path: "./proxy_provider/SINGAPURA ORBIT \U0001F1F8\U0001F1EC.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/proxy_provider/singapuraorbit%F0%9F%87%B8%F0%9F%87%AC%20.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 99
+  "SINGAPURA MIFI \U0001F1F8\U0001F1EC":
+    type: http
+    path: "./proxy_provider/SINGAPURA MIFI \U0001F1F8\U0001F1EC.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/proxy_provider/singapuramifi%F0%9F%87%B8%F0%9F%87%AC.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 99
+rules:
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- IP-CIDR,198.18.0.1/16,REJECT,no-resolve
+- RULE-SET,DIRECT,DIRECT
+- "RULE-SET,GAMES,LOBBY-GAME \U0001F579️"
+- "RULE-SET,GAMING,LOBBY-GAME \U0001F579️"
+- "RULE-SET,GLOBAL,BROWSING \U0001F30F"
+- RULE-SET,REJECT,REJECT
+- "RULE-SET,PLAY_STORE,BROWSING \U0001F30F"
+- "RULE-SET,PORT_GAMES,PORT-GAMING \U0001F3AE"
+- "RULE-SET,SOSMED,SOSMED \U0001F4E9"
+- RULE-SET,SPEEDTEST,SPEEDTEST ⚡
+- "RULE-SET,STREAMING,STREAMING \U0001F4FA"
+- "RULE-SET,TRAFFICKINDO,TRAFFICKINDO \U0001F3E7"
+- "RULE-SET,WA_ZOOM,WHATSAPP dan ZOOM \U0001F4E9"
+- "RULE-SET,YOUTUBE,STREAMING \U0001F4FA"
+- "AND,((NOT,((DST-PORT,80/81/443/8000-8081/21/22/23/81/88/5050/843/182/53))),(NETWORK,UDP)),LOBBY-GAME
+  \U0001F579️"
+- "AND,((NOT,((DST-PORT,80/81/443/8000-8081/21/22/23/81/88/5050/843/182/53))),(NETWORK,TCP)),LOBBY-GAME
+  \U0001F579️"
+- MATCH,GLOBAL
+rule-providers:
+  DIRECT:
+    type: file
+    behavior: classical
+    path: "./rule_provider/s-direct.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_direct.yaml
+  GLOBAL:
+    type: file
+    behavior: classical
+    path: "./rule_provider/s-global.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_global.yaml
+  REJECT:
+    type: file
+    behavior: classical
+    path: "./rule_provider/s-reject.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_reject.yaml
+  STREAMING:
+    type: file
+    behavior: classical
+    path: "./rule_provider/s-streaming.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_streaming.yaml
+  SOSMED:
+    type: file
+    behavior: classical
+    path: "./rule_provider/s-sosmed.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_sosmed.yaml
+  WA_ZOOM:
+    type: file
+    behavior: classical
+    path: "./rule_provider/s-whatsapp.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_whatsappzoom.yaml
+  YOUTUBE:
+    type: file
+    behavior: domain
+    path: "./rule_provider/s-youtube.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_youtube.yaml
+  TRAFFICKINDO:
+    type: http
+    behavior: classical
+    path: "./rule_provider/s-indo.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_traffickindo.yaml
+    interval: 86400
+  GAMES:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_games.yaml
+    path: "./rule_provider/s-games.yaml"
+    interval: 86400
+  GAMING:
+    type: http
+    behavior: classical
+    path: "./rule_provider/s-gaming.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_gaming.yaml
+    interval: 86400
+  PORT_GAMES:
+    type: http
+    behavior: classical
+    path: "./rule_provider/s-portgames.yaml"
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_portgames.yaml
+    interval: 86400
+  PLAY_STORE:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_playstore.yaml
+    path: "./rule_provider/s-playstore.yaml"
+    interval: 86400
+  SPEEDTEST:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/afanbombom/open_clash/main/rule_provider/rule_speedtest.yaml
+    path: "./rule_provider/s-speedtest.yaml"
+    interval: 86400
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  listen: 0.0.0.0:7874
+  fake-ip-filter:
+  - "*.lan"
+  - "*.localdomain"
+  - "*.example"
+  - "*.invalid"
+  - "*.localhost"
+  - "*.test"
+  - "*.local"
+  - "*.home.arpa"
+  - time.*.com
+  - time.*.gov
+  - time.*.edu.cn
+  - time.*.apple.com
+  - time1.*.com
+  - time2.*.com
+  - time3.*.com
+  - time4.*.com
+  - time5.*.com
+  - time6.*.com
+  - time7.*.com
+  - ntp.*.com
+  - ntp1.*.com
+  - ntp2.*.com
+  - ntp3.*.com
+  - ntp4.*.com
+  - ntp5.*.com
+  - ntp6.*.com
+  - ntp7.*.com
+  - "*.time.edu.cn"
+  - "*.ntp.org.cn"
+  - "+.pool.ntp.org"
+  - time1.cloud.tencent.com
+  - music.163.com
+  - "*.music.163.com"
+  - "*.126.net"
+  - musicapi.taihe.com
+  - music.taihe.com
+  - songsearch.kugou.com
+  - trackercdn.kugou.com
+  - "*.kuwo.cn"
+  - api-jooxtt.sanook.com
+  - api.joox.com
+  - joox.com
+  - y.qq.com
+  - "*.y.qq.com"
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+  - "*.xiami.com"
+  - "*.music.migu.cn"
+  - music.migu.cn
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - msftconnecttest.com
+  - msftncsi.com
+  - localhost.ptlogin2.qq.com
+  - localhost.sec.qq.com
+  - "+.srv.nintendo.net"
+  - "*.n.n.srv.nintendo.net"
+  - "+.stun.playstation.net"
+  - xbox.*.*.microsoft.com
+  - "*.*.xboxlive.com"
+  - xbox.*.microsoft.com
+  - xnotify.xboxlive.com
+  - "+.battlenet.com.cn"
+  - "+.wotgame.cn"
+  - "+.wggames.cn"
+  - "+.wowsgame.cn"
+  - "+.wargaming.net"
+  - proxy.golang.org
+  - stun.*.*
+  - stun.*.*.*
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - "+.stun.*.*.*.*.*"
+  - heartbeat.belkin.com
+  - "*.linksys.com"
+  - "*.linksyssmartwifi.com"
+  - "*.router.asus.com"
+  - mesu.apple.com
+  - swscan.apple.com
+  - swquery.apple.com
+  - swdownload.apple.com
+  - swcdn.apple.com
+  - swdist.apple.com
+  - lens.l.google.com
+  - stun.l.google.com
+  - "+.nflxvideo.net"
+  - "*.square-enix.com"
+  - "*.finalfantasyxiv.com"
+  - "*.ffxiv.com"
+  - "*.ff14.sdo.com"
+  - ff.dorado.sdo.com
+  - "*.mcdn.bilivideo.cn"
+  - "+.media.dssott.com"
+  - time-ios.apple.com
+  - shark007.net
+  - "+.dns.google"
+  nameserver:
+  - dhcp://"usb0"
+  - dhcp://"wwan0"
+  - 192.168.8.1
+  - 192.168.9.1
+  - 8.8.8.8
+  - 8.8.4.4
+  - https://dns.adguard.com/dns-query
+  - https://dns.google/dns-query
+  - tls://dns.adguard.com
+  - tls://dns.google
+  default-nameserver:
+  - 192.168.8.1
+  - 192.168.9.1
+  - 8.8.8.8
+  - 8.8.4.4
+fallback-filter:
+  geoip: true
+  geoip-code: ID
+  ipcidr:
+  - 0.0.0.0/8
+  - 10.0.0.0/8
+  - 100.64.0.0/10
+  - 127.0.0.0/8
+  - 169.254.0.0/16
+  - 172.16.0.0/12
+  - 192.0.0.0/24
+  - 192.0.2.0/24
+  - 192.88.99.0/24
+  - 192.168.0.0/16
+  - 198.18.0.0/15
+  - 198.51.100.0/24
+  - 203.0.113.0/24
+  - 224.0.0.0/4
+  - 240.0.0.0/4
+  - 255.255.255.255/32
+  domain:
+  - "+.google.com"
+  - "+.facebook.com"
+  - "+.youtube.com"
+  - "+.githubusercontent.com"
+  - "+.googlevideo.com"
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
+  - msftconnecttest.com
+  - msftncsi.com
+  - "+.*"
+default-nameserver:
+- 8.8.8.8
+- 8.8.4.4
+- 192.168.8.1
+- 10.0.124.193
+- 192.168.9.1
+- 114.114.114.114
+- 119.29.29.29
+- 192.168.42.129
+nameserver:
+- 192.168.8.1
+- 192.168.9.1
+- dhcp://"usb0"
+- dhcp://"wwan0"
+- 8.8.8.8
+- 8.8.4.4
+- https://dns.adguard.com/dns-query
+- https://dns.google/dns-query
+- tls://dns.google
+- tls://dns.adguard.com
+unified-delay: true
+tun:
+  enable: true
+  stack: system
+  device: utun
+  auto-route: false
+  auto-detect-interface: false
+  dns-hijack:
+  - tcp://any:53
+redir-port: 7892
+tproxy-port: 7895
+port: 7890
+socks-port: 7891
+mixed-port: 7893
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: BOMBOM
+bind-address: "*"
+external-ui: "/usr/share/openclash/ui"
+ipv6: false
+auto-route: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+geodata-mode: false
+geodata-loader: memconservative
+tcp-concurrent: true
+sniffer:
+  enable: true
+  sniffing:
+  - tls
+  - http
+authentication:
+- Clash:oHeRh67o
