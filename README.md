@@ -129,11 +129,25 @@ Cara Uploud Backup Convig Openclash adalah sebagai berikut:
 
 <img src="https://github.com/afanbombom/open_clash/blob/main/Asset/uploud_backup2.jpg" border="0">
 
+* Maka Openclash akan otomatis running dan kalian tinggal mengganti akun vpn dengan akun andalan kalian
+
 ## Tutorial uploud file convig manual:
 
-Cara Uploud File Convig Openclash secara manual adalah seperti contoh pada gambar dibawah ini:
+Cara Uploud File Convig Openclash secara manual adalah sebagai berikut:
 
-<img src="https://raw.githubusercontent.com/afanbombom/open_clash/main/assets/uploud_manual.jpg" border="0">
+* Langkah pertama buka Openclash kemudian masuk ke menu Convig Manage.
+* Langkah kedua dibagian "Upload File" Type pilih "Config File" pilih file BOMBOM.yaml yang telah kalian dowload kemudian pilih "UPLOUD"
+* Langkah ketiga dibagian "Upload File" Type pilih "Proxy Provider File". UPLOUD satu persatu folder yaml yang ada di dalam folder Proxy Provider yang telah kalian download sampai semuanya teruploud.
+* Langkah keempat dibagian "Upload File" Type pilih "Rule Provider File". UPLOUD satu persatu folder .yaml yang ada di dalam folder Rule Provider yang telah kalian download sampai semuanya teruploud.
+* Langkah kelima jika semua file telah selesai kalian uploud kemudian tekan COMMIT SETTINGS dan APPLY SETTINGS.
+
+Contoh seperti gambar di bawah ini:
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/manual1.jpg" border="0">
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/manual2.jpg" border="0">
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/manual3.jpg" border="0">
 
 ## Cara Mengisi Akun
 
