@@ -15,3 +15,9 @@ proxies:
     path: "/path"
     headers:
       Host: server.address.id
+      
+      
+#CDN berarti BUG ada di setelah tulisan "server"
+#SNI berarti BUG ada di setelah tulisan "SNI"
+#Yang berkenan traktir kopi bisa via Ovo/Dana 087758388833 a/n ANA AFANTO
+#TERIMAKASIH
