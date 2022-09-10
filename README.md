@@ -49,7 +49,7 @@ OpenClash Config untuk VVIP IPTUNNELS
 # Features
 
 * Support Multi-WAN/Modem
-* Pisah traffik umum, sosmed, streaming, gaming.
+* Pisah traffik umum, sosmed, streaming, gaming, whatsapp, traffickindo
 * Support rule Adblock, Privacy & P0rn.
 * Support Gaming sites
 * Support Game port filtering
@@ -65,21 +65,19 @@ Openclash config yang disediakan pada repositori ini dikhususkan untuk pengguna 
 
 ## Modem/WAN
 
-Disini Pertama kalian tentuin berapa modem/router 4G atau WAN sebagai sumber internet yang akan digunakan. Secara Default Config ini menggunakan 3 Modem sebagai berikut:
+Disini Pertama kalian tentuin berapa modem/router 4G atau WAN sebagai sumber internet yang akan digunakan. Secara Default Config ini menggunakan 2 Modem sebagai berikut:
 
 ```conf
-Modem OrbitMAX B818-263   : WAN A
-Modem E8372h              : WAN B
-Modem B315                : WAN C
+Modem ORBIT STAR2   : WAN A
+Modem E5372s        : WAN B
 ```
 
 Modem tersebut mempunyai fungsi masing-masing agar memungkinkan mendapatkan performa internet dengan baik.
 
 MODEM | FUNGSI
 ------------ | -------------
-WAN A | INJECT LOAD-BALANCE
-WAN B | INJECT LOAD-BALANCE
-WAN C | TRAFFIC DIRECT, TRAFFIC GAME DAN BACKUP DARI LOAD-BALANCE
+WAN A | INJECT XL AKRAB
+WAN B | INJECT XL AKRAB
 
 
 ## Interface Modem/WAN
@@ -92,9 +90,8 @@ Perhatikan tanda kotak biru yang merupakan **interface-name** dengan berikut det
 
 MODEM | INTERFACE-NAME
 ------------ | -------------
-WAN A | eth1
-WAN B | wlan0
-WAN C | eth2
+WAN A | usb0
+WAN B | wwan0
 
 # Openclash
 
@@ -102,7 +99,7 @@ Plugin ini adalah klien Clash yang bisa dijalankan di OpenWrt. Kompatibel dengan
 
 ## Download Config
 
-Download zip master dan ekstrak file [**open_clash-main.zip**](https://codeload.github.com/malikshi/open_clash/zip/refs/heads/main)
+Download zip master dan ekstrak file [**open_clash-main.zip**](https://codeload.github.com/afanbombom/open_clash/zip/refs/heads/main)
 
 ### Pemilihan Config
 
@@ -125,71 +122,40 @@ Jika menggunakan 2 modem/WAN kita anggap modem tersebut dengan details berikut:
 
 MODEM | INTERFACE-NAME
 ------------ | -------------
-WAN A | eth1
-WAN B | wlan0
-
-kita perlu edit configuration utama `main.yaml` dengan cara menghapus segala yang berkaitan dengan **WAN C** yakni,
-
-```yaml
-- name: Direct WAN C
-  type: select
-  disable-udp: false
-  interface-name: eth2
-  proxies:
-  - DIRECT
-```
-
-dan hapus baris yang memiliki kata `Direct WAN C` pada settingan berikut
-
-```yaml
-- name: Direct Multi-WAN
-  type: select
-  disable-udp: false
-  proxies:
-  - Direct WAN A
-  - Direct WAN B
-  - Direct WAN C
-```
-
-setelah dihapus maka jadi seperti ini,
-
-```yaml
-- name: Direct Multi-WAN
-  type: select
-  disable-udp: false
-  proxies:
-  - Direct WAN A
-  - Direct WAN B
-```
+WAN A | usb0
+WAN B | wwan0
 
 ## 1 Modem/WAN
 
-Jika kalian hanya menggunakan satu modem hapus hal-hal yang berkaitan dengan `Direct WAN B` dan `Direct WAN C` seperti contoh pengaturan 2 modem.
+Jika kalian hanya menggunakan satu modem hapus hal-hal yang berkaitan dengan `Direct WAN B`
 
 ## Cara Mengisi Akun
 
 Cara mengisi akun supaya load-balance pada tiap proxy-provider berjalan dengan baik. Sangat direkomendasikan tiap proxy-provider diisi dengan 2 akun dengan contoh sebagai berikut:
 
-* untuk file proxy-provider [vvip-id.yaml](https://github.com/malikshi/open_clash/blob/main/proxy_provider/vvip-id.yaml)
+* untuk file proxy-provider [indonesiaorbit.yaml](https://github.com/afanbombom/open_clash/blob/main/proxy_provider/indonesiaorbit.yaml)
 
 NAMA | ISP | INTERFACE-NAME
------------- | ------------- | -------------
-VVIP-ID1 | BIZNET | eth1
-VVIP-ID2 | UNINET | wlan0
+--------------- | ----------- | -------------
+INDONESIA ORBIT | SERVER INDO | usb0
 
-* untuk file proxy-provider [vvip-sg.yaml](https://github.com/malikshi/open_clash/blob/main/proxy_provider/vvip-sg.yaml)
-
-NAMA | ISP | INTERFACE-NAME
------------- | ------------- | -------------
-VVIP-SG1 | DO | eth1
-VVIP-SG2 | HE | wlan0
-
-* untuk file proxy-provider [vvip-game.yaml](https://github.com/malikshi/open_clash/blob/main/proxy_provider/vvip-game.yaml)
+* untuk file proxy-provider [singapuraorbit.yaml](https://github.com/afanbombom/open_clash/blob/main/proxy_provider/singapuraorbit.yaml)
 
 NAMA | ISP | INTERFACE-NAME
------------- | ------------- | -------------
-VVIP-GM1 | BIZNET | eth1
-VVIP-GM2 | UNINET | wlan0
+--------------- | ---------------- | -------------
+SINGAPURA ORBIT | SERVER SINGAPURA | usb0
+
+* untuk file proxy-provider [indonesiamifi.yaml](https://github.com/afanbombom/open_clash/blob/main/proxy_provider/indonesiamifi.yaml)
+
+NAMA | ISP | INTERFACE-NAME
+-------------- | ----------- | -------------
+INDONESIA MIFI | SERVER INDO | wwan0
+
+* untuk file proxy-provider [singapuramifi.yaml](https://github.com/afanbombom/open_clash/blob/main/proxy_provider/singapuramifi.yaml)
+
+NAMA | ISP | INTERFACE-NAME
+-------------- | ---------------- | -------------
+SINGAPURA MIFI | SERVER SINGAPURA | wwan0
 
 contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name!
 
@@ -205,7 +171,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name!
     - h2
     - http/1.1
   skip-cert-verify: true
-  interface-name: eth1
+  interface-name: usb0
 
 - name: "VVIP-ID2"
   type: vmess
@@ -225,16 +191,15 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name!
       Host: aaa.bbb.ccc.ddd
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-  interface-name: wlan0
+  interface-name: usb0
 ```
 
 ### Edit Files Proxy Provider
 
-Mengisi akun tunnel pada 3 files pada folder proxy_provider yang terdiri dari vvip-sg, vvip-id, dan vvip-game.
+Mengisi akun tunnel pada 4 files pada folder proxy_provider yang terdiri dari akun server indonesia, akun server singapura.
 Fungsi dari proxy_provider diatas:
-* vvip-sg.yaml, Gunakan akun VVIP IPTUNNELS berlokasi SINGAPORE untuk memperoleh speed/traffic yang lebih bagus.
-* vvip-id.yaml, Gunakan akun VVIP IPTUNNELS berlokasi INDONESIA untuk keperluan akses websites/marketplace/live stream apps/Video on Demand yang mengharuskan memakai IP Address Publik Indonesia.
-* vvip-game.yaml, Gunakan akun VVIP IPTUNNELS yang memiliki ping atau latency rendah seperti trojan, shadowsocks, gRPC, Snell.
+* singapuraorbit.yaml, singapuramifi.yaml Gunakan akun VVIP berlokasi SINGAPORE untuk memperoleh speed/traffic yang lebih bagus.
+* indonesiaorbit.yaml, singaapuramifi.yaml Gunakan akun VVIP berlokasi INDONESIA untuk keperluan akses websites/marketplace/live stream apps/Video on Demand yang mengharuskan memakai IP Address Publik Indonesia.
 
 Keterangan lebih lanjut:
 Karena config akan disetting dengan sistem fallback dimana jika proxy list pertama gagal maka akan menggunakan proxy list kedua, jika proxy list pertama dan kedua gagal maka akan menggunakan DIRECT, namun jika 30 detik kemudian proxy list pertama kembali aktif maka proxy list urutan pertama akan digunakan, sehingga sangat menguntungkan karena tidak perlu memikirkan jika salah satu proxy gagal.
