@@ -1,0 +1,23 @@
+proxies:
+- name: (GANTI NAMA BEBAS)
+  type: vmess
+  server: bug.andalanmu.com
+  port: 443
+  uuid: c43d1e62-d33e-4146-b317-123456789
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: server.address.id
+  network: ws
+  ws-opts:
+    path: "/path"
+    headers:
+      Host: server.address.id
+
+#CDN berarti BUG ada di setelah tulisan "server"
+#SNI berarti BUG ada di setelah tulisan "SNI"
+#Yang mau gabung grub tele join (https://t.me/convigocbombom)
+#Yang berkenan traktir kopi bisa via Ovo/Dana 087758388833 a/n ANA AFANTO
+#TERIMAKASIH
