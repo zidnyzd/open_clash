@@ -149,9 +149,16 @@ Contoh seperti gambar di bawah ini:
 
 <img src="https://github.com/afanbombom/open_clash/blob/main/Asset/manual3.jpg" border="0">
 
-## Cara Mengisi Akun
+## Cara Mengisi/Mengganti Akun
 
-Cara mengisi akun supaya load-balance pada tiap proxy-provider berjalan dengan baik. Sangat direkomendasikan tiap proxy-provider diisi dengan 2 akun dengan contoh sebagai berikut:
+* Masuk ke menu Config Editor di Openclash
+* Kemudian pilih folder proxy_provider dan edit folder .yaml yang ada didalamnya
+* Ganti isi folder .yaml tersebetut dengan akun kalian. Mulai dari ganti nama, server name, UUID, BUG, Path dll.
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/gantiakun.jpg" border="0">
+
+
+Supaya load-balance pada tiap proxy-provider berjalan dengan baik, sangat direkomendasikan tiap proxy-provider diisi dengan 2 akun atau lebih dengan contoh sebagai berikut:
 
 * untuk file proxy-provider [indonesiaorbit.yaml](https://raw.githubusercontent.com/afanbombom/open_clash/main/Convig%20Open%20Clash/Pengguna%202%20Modem/Uploud%20Manual/proxy_provider/indonesiaorbit.yaml)
 
