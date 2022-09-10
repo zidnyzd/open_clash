@@ -1,35 +1,18 @@
 proxies:
-- name: COK IDC GITHUB MIFI
+- name: INDONESIA 1
   type: vmess
-  server: bombomonly.wun.my.id
+  server: bug.andalanmu.com
   port: 80
-  uuid: c43d1e62-d33e-4146-b317-3c69ba96c427
+  uuid: xxxxxxx-d33e-4146-b317-123456789
   alterId: 0
   cipher: auto
   udp: true
   skip-cert-verify: true
   tls: false
-  servername: idc-vvip.cokkoecok.my.id
+  servername: server.akun.id
   network: ws
   ws-opts:
-    path: "/v2ray"
+    path: "/vmess"
     headers:
-      Host: idc-vvip.cokkoecok.my.id
-  interface-name: wwan0
-- name: NEO SANU GITHUB MIFI
-  type: vmess
-  server: bombomonly.wun.my.id
-  port: 80
-  uuid: ec58117a-0d16-418f-b064-32352f297f8b
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: false
-  servername: nusa4.nextvpn.cc
-  network: ws
-  ws-opts:
-    path: "/vpnneo"
-    headers:
-      Host: nusa4.nextvpn.cc
+      Host: server.akun.id
   interface-name: wwan0
