@@ -7,7 +7,6 @@
   - [Interface Modem/WAN](#interface-modemwan)
 - [Openclash](#openclash)
   - [Download Config](#download-config)
-    - [Pemilihan Config](#pemilihan-config)
   - [Setting Multi-WAN OC](#setting-multi-wan-oc)
   - [2 Modem/WAN](#2-modemwan)
   - [1 Modem/WAN](#1-modemwan)
@@ -100,17 +99,6 @@ Plugin ini adalah klien Clash yang bisa dijalankan di OpenWrt. Kompatibel dengan
 ## Download Config
 
 File Download (https://github.com/afanbombom/open_clash/blob/main/CONVIG/Backup-OpenClash-BOMBOM2.tar.gz)
-
-### Pemilihan Config
-
-Disini sudah disediakan main configuration openclash dengan mode online rules dan mode offline rules dengan detail sebagai berikut:
-
-MODE | Filename | Keuntungan | Kelemahan
------------- | ------------- | ------------- | -------------
-<span style="color: green"> Online </span> | <span style="color: green"> [main.yaml](main.yaml) </span> | Semua rule dapat update otomatis | Tidak cocok untuk yang tidak memiliki kouta utama & Start Openclash lama karena download rule
-<span style="color: red"> Offline </span> | <span style="color: red"> [main_offline.yaml](main_offline.yaml) </span> | Dapat modif manual & start Openclash Cepat | Jika ingin update rule dari kami harus pakai script [updaterule](https://github.com/malikshi/updaterule) yang kami sediakan
-
-Jika sudah menentukan main configuration yang akan digunakan maka gunakan tipe tersebut sampai tutorial selesai, baik edit dan upload [main configuration](#import-mainyaml)
 
 ## Setting Multi-WAN OC
 
