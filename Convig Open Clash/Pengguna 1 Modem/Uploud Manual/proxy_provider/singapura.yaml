@@ -1,0 +1,17 @@
+proxies:
+- name: (GANTI NAMA BEBAS)
+  type: vmess
+  server: bug.andalanmu.com
+  port: 443
+  uuid: c43d1e62-d33e-4146-b317-123456789
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: server.address.id
+  network: ws
+  ws-opts:
+    path: "/path"
+    headers:
+      Host: server.address.id
