@@ -378,10 +378,13 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name!
 
 Mengisi akun tunnel pada 4 files pada folder proxy_provider yang terdiri dari akun server indonesia, akun server singapura.
 Fungsi dari proxy_provider diatas:
+
 * singapuraorbit.yaml, singapuramifi.yaml Gunakan akun VVIP berlokasi SINGAPORE untuk memperoleh speed/traffic yang lebih bagus.
+
 * indonesiaorbit.yaml, singaapuramifi.yaml Gunakan akun VVIP berlokasi INDONESIA untuk keperluan akses websites/marketplace/live stream apps/Video on Demand yang mengharuskan memakai IP Address Publik Indonesia.
 
 Keterangan lebih lanjut:
+
 Convig bisa ditambahkan dengan pilihan sistem fallback dimana jika proxy list pertama gagal maka akan menggunakan proxy list kedua, jika proxy list pertama dan kedua gagal maka akan menggunakan DIRECT, namun jika 30 detik kemudian proxy list pertama kembali aktif maka proxy list urutan pertama akan digunakan, sehingga sangat menguntungkan karena tidak perlu memikirkan jika salah satu proxy gagal.
 
 # Rule Direct/Bypassed Connection
