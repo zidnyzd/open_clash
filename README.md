@@ -41,7 +41,6 @@
 
 # Openclash Config
 
-OpenClash Config untuk VVIP IPTUNNELS
 - [Join Telegram](https://t.me/convigocbombom)
 - [Requests Rules](https://github.com/afanbombom/open_clash/issues/new/choose)
 
@@ -49,14 +48,13 @@ OpenClash Config untuk VVIP IPTUNNELS
 
 * Support Multi-WAN/Modem
 * Pisah traffik umum, sosmed, streaming, gaming, whatsapp, traffickindo
-* Support rule Adblock, Privacy & P0rn.
+* Support rule Adblock
 * Support Gaming sites
 * Support Game port filtering
 * Support web streaming/VOD/TV region ID.
 * Support 10 marketplace ID.
 * Support E-wallet,Payment,Bank ID
 * Support Direct/Bypass traffik.
-* Support Rules Online and Offline.
 
 # Persiapan
 
