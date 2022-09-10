@@ -8,7 +8,7 @@
 - [Openclash](#openclash)
   - [Download Config](#download-config)
   - [Uploud Config](#uploud-config)
-    - [Cara Uploud Backup Convig Openclash](#tutorial-uploud-convig-openclash)
+    - [Tutorial uploud backup Openclash](#tutorial-uploud-convig-openclash)
   - [Setting Multi-WAN OC](#setting-multi-wan-oc)
   - [2 Modem/WAN](#2-modemwan)
   - [1 Modem/WAN](#1-modemwan)
