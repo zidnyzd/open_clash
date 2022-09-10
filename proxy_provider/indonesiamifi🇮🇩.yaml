@@ -1,5 +1,5 @@
 proxies:
-- name: INDONESIA 1
+- name: INDONESIA 1 (GANTI NAMA BEBAS)
   type: vmess
   server: bug.andalanmu.com
   port: 80
