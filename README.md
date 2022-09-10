@@ -43,7 +43,7 @@
 # Openclash Config
 
 OpenClash Config untuk VVIP IPTUNNELS
-- [Join Telegram](https://t.me/+6287758388833)
+- [Join Telegram](https://t.me/papamuda44)
 - [Requests Rules](https://github.com/afanbombom/open_clash/issues/new/choose)
 
 # Features
@@ -61,7 +61,7 @@ OpenClash Config untuk VVIP IPTUNNELS
 
 # Persiapan
 
-Openclash config yang disediakan pada repositori ini dikhususkan untuk pengguna VVIP IPTUNNELS dan pengguna openclash di Indonesia.Silahkan untuk membaca baik - baik tutorial yang diberikan, dan jika ada pertanyaan silahkan open issues atau chat digroup telegram [IPTUNNELS](https://t.me/iptunnelscom).
+Openclash config yang disediakan pada repositori ini dikhususkan untuk pengguna VVIP IPTUNNELS dan pengguna openclash di Indonesia.Silahkan untuk membaca baik - baik tutorial yang diberikan, dan jika ada pertanyaan silahkan open issues atau chat digroup telegram (https://t.me/papamuda44).
 
 ## Modem/WAN
 
@@ -99,7 +99,7 @@ Plugin ini adalah klien Clash yang bisa dijalankan di OpenWrt. Kompatibel dengan
 
 ## Download Config
 
-Download zip master dan ekstrak file [**open_clash-main.zip**](https://codeload.github.com/afanbombom/open_clash/zip/refs/heads/main)
+File Download (https://github.com/afanbombom/open_clash/blob/main/CONVIG/Backup-OpenClash-BOMBOM2.tar.gz)
 
 ### Pemilihan Config
 
