@@ -1,0 +1,38 @@
+proxies:
+- name: CLOUDFRONT ORBIT
+  type: vmess
+  server: bombomonly.wun.my.id
+  port: 443
+  uuid: 0c47a8e6-d5cd-4c29-a02c-3fb4786307bb
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: sgdo-deb.dfmlta.xyz
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vmess-grpc
+  interface-name: usb0
+- name: NEO MELBI ORBIT
+  type: vmess
+  server: bombomonly.wun.my.id
+  port: 80
+  uuid: 4a7e9aaf-07e6-46b0-98a5-c0ddfba0e804
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: melbi.nextvpn.cc
+  network: ws
+  ws-opts:
+    path: "/vpnneo"
+    headers:
+      Host: melbi.nextvpn.cc
+  interface-name: usb0
+
+#CDN berarti BUG ada di setelah tulisan "server"
+#SNI berarti BUG ada di setelah tulisan "SNI"
+#Yang berkenan traktir kopi bisa via Ovo/Dana 087758388833 a/n ANA AFANTO
+#TERIMAKASIH

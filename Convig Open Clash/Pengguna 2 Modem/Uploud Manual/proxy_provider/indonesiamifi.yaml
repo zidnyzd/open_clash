@@ -1,0 +1,40 @@
+proxies:
+- name: COK IDC VIP MIFI
+  type: vmess
+  server: bombomonly.wun.my.id
+  port: 80
+  uuid: c43d1e62-d33e-4146-b317-3c69ba96c427
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: idc-vvip.cokkoecok.my.id
+  network: ws
+  ws-opts:
+    path: "/v2ray"
+    headers:
+      Host: idc-vvip.cokkoecok.my.id
+  interface-name: wwan0
+- name: NEO SANU MIFI
+  type: vmess
+  server: bombomonly.wun.my.id
+  port: 80
+  uuid: ec58117a-0d16-418f-b064-32352f297f8b
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: false
+  servername: nusa4.nextvpn.cc
+  network: ws
+  ws-opts:
+    path: "/vpnneo"
+    headers:
+      Host: nusa4.nextvpn.cc
+  interface-name: wwan0
+
+#CDN berarti BUG ada di setelah tulisan "server"
+#SNI berarti BUG ada di setelah tulisan "SNI"
+#Yang berkenan traktir kopi bisa via Ovo/Dana 087758388833 a/n ANA AFANTO
+#TERIMAKASIH
