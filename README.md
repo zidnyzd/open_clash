@@ -67,16 +67,16 @@ Openclash config yang disediakan pada repositori ini dikhususkan untuk pengguna 
 Disini Pertama kalian tentuin berapa modem/router 4G atau WAN sebagai sumber internet yang akan digunakan. Secara Default Config ini menggunakan 2 Modem sebagai berikut:
 
 ```conf
-Modem ORBIT STAR2   : WAN A
-Modem E5372s        : WAN B
+Modem ORBIT STAR2   : WAN 1 /usb0
+Modem E5372s        : WAN 2 /wwan0
 ```
 
 Modem tersebut mempunyai fungsi masing-masing agar memungkinkan mendapatkan performa internet dengan baik.
 
 MODEM | FUNGSI
 ------------ | -------------
-WAN A | INJECT XL AKRAB
-WAN B | INJECT XL AKRAB
+WAN 1 | INJECT XL AKRAB
+WAN 2 | INJECT XL AKRAB
 
 
 ## Interface Modem/WAN
@@ -85,12 +85,12 @@ Untuk menentukan interface-name modem/WAN bisa melalui `LuCi > Network >> Interf
 
 <img src="https://github.com/afanbombom/open_clash/blob/main/asset/interfacename.jpg" border="0">
 
-Perhatikan tanda kotak biru yang merupakan **interface-name** dengan berikut detailsnya,
+Perhatikan pada gambar interface di atas, berikut adalah detailnya,
 
 MODEM | INTERFACE-NAME
 ------------ | -------------
-WAN A | usb0
-WAN B | wwan0
+WAN 1 | usb0
+WAN 2 | wwan0
 
 # Openclash
 
