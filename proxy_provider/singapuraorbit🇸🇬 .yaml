@@ -1,33 +1,16 @@
 proxies:
-- name: CLOUDFRONT GITHUB ORBIT
+- name: SINGAPURA 2 (GANTI NAMA BEBAS)
   type: vmess
-  server: bombomonly.wun.my.id
+  server: bug.andalanmu.com
   port: 443
-  uuid: 0c47a8e6-d5cd-4c29-a02c-3fb4786307bb
+  uuid: xxxxxxx-d5cd-4c29-a02c-123456789
   alterId: 0
   cipher: auto
   udp: true
   skip-cert-verify: true
   tls: true
-  servername: sgdo-deb.dfmlta.xyz
+  servername: server.addres.id
   network: grpc
   grpc-opts:
     grpc-service-name: vmess-grpc
-  interface-name: usb0
-- name: NEO MELBI GITHUB ORBIT
-  type: vmess
-  server: bombomonly.wun.my.id
-  port: 80
-  uuid: 4a7e9aaf-07e6-46b0-98a5-c0ddfba0e804
-  alterId: 0
-  cipher: auto
-  udp: true
-  skip-cert-verify: true
-  tls: false
-  servername: melbi.nextvpn.cc
-  network: ws
-  ws-opts:
-    path: "/vpnneo"
-    headers:
-      Host: melbi.nextvpn.cc
   interface-name: usb0
