@@ -32,13 +32,17 @@
   - [Overviews](#overviews)
 - [Setting Yacd](#setting-yacd)
   - [Proxies](#proxies)
-    - [Toggle TrafficDirect](#toggle-trafficdirect)
-    - [Toggle Traffic Multi-WAN](#toggle-traffic-multi-wan)
-    - [Toggle TrafficPortGames](#toggle-trafficportgames)
-    - [Toggle TrafficGaming](#toggle-trafficgaming)
-    - [Toggle TrafficAds](#toggle-trafficads)
-    - [Toggle TrafficP0rn](#toggle-trafficp0rn)
+    - [Toggle Traffic LOBBY-GAME](#toggle-traffic-lobby-game)
+    - [Toggle Traffic PORT-GAMING](#toggle-traffic-port-gaming)
+    - [Toggle Traffic SOSMED](#toggle-traffic-sosmed)
+    - [Toggle Traffic SPEEDTEST](#toggle-traffic-speedtest)
+    - [Toggle Traffic BROWSING](#toggle-traffic-browsing)
+    - [Toggle Traffic STREAMING](#toggle-traffic-streaming)
+    - [Toggle Traffic TRAFFICKINDO](#toggle-traffic-traffickindo)
+    - [Toggle Traffic WHATSAPP dan ZOOM](#toggle-traffic-whatsapp-dan-zoom)
     - [Toggle Traffic GLOBAL](#toggle-traffic-global)
+    - [Toggle Proxy Provider INDONESIA](#toggle-proxy-provider-indonesia)
+    - [Toggle Proxy Provider SINGAPURA](#toggle-proxy-provider-singapura)
   - [Config](#config)
 - [Test Adblock 100%](#test-adblock-100)
 - [Frimeware Yang Saya Gunakan](#frimeware-yang-saya-gunakan)
@@ -459,29 +463,49 @@ Yacd adalah yet another clash dashboard, yakni dashboard clash yang dapat diguna
 
 Kita akan mengatur toggle/pilihan proxies yang kan digunakan tiap proxy-groups.
 
-### Toggle TrafficDirect
+### Toggle Traffic `LOBBY-GAME`
 
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/direct.jpg" border="0">
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/LOBBY-GAME.jpg" border="0">
 
-### Toggle Traffic Multi-WAN
+### Toggle Traffic `PORT-GAMING`
 
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/multiwan.jpg" border="0">
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/PORT-GAMING.jpg" border="0">
 
-### Toggle TrafficPortGames
+### Toggle Traffic `SOSMED`
 
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/portgames.jpg" border="0">
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/SOSMED.jpg" border="0">
 
-### Toggle TrafficGaming
+### Toggle Traffic `SPEEDTEST`
 
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/gaming.jpg" border="0">
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/SPEEDTEST.jpg" border="0">
 
-### Toggle TrafficAds
+### Toggle Traffic `BROWSING`
 
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/ads.jpg" border="0">
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/BROWSING.jpg" border="0">
 
-### Toggle Traffic GLOBAL
+### Toggle Traffic `STREAMING`
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/STREAMING.jpg" border="0">
+
+### Toggle Traffic `TRAFFICKINDO`
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/TRAFFICKINDO.jpg" border="0">
+
+### Toggle Traffic `WHATSAPP dan ZOOM`
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/WHATSAPP.jpg" border="0">
+
+### Toggle Traffic `GLOBAL`
 Untuk pertama kali start openclash maka harus setting proxies `GLOBAL` ke traffic proxy-groups `Umum`.
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/yacd-proxies-global.jpg" border="0">
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/GLOBAL.jpg" border="0">
+
+### Toggle Proxy Provider `INDONESIA`
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/INDO.jpg" border="0">
+
+### Toggle Proxy Provider `SINGAPURA`
+
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/SG.jpg" border="0">
 
 
 ## Config
