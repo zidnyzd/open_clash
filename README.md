@@ -127,7 +127,7 @@ Cara Uploud Backup Convig Openclash adalah sebagai berikut:
 
 <img src="https://github.com/afanbombom/open_clash/blob/main/Asset/uploud_backup1.jpg" border="0">
 
-* Langkah kedua scroll ke bawah dan pilih COMMIT SETTINGS kemudian APPLY SETTINGS
+* Langkah kedua scroll ke bawah dan pilih `COMMIT SETTINGS` kemudian `APPLY SETTINGS`
 
 <img src="https://github.com/afanbombom/open_clash/blob/main/Asset/uploud_backup2.jpg" border="0">
 
@@ -137,11 +137,11 @@ Cara Uploud Backup Convig Openclash adalah sebagai berikut:
 
 Cara Uploud File Convig Openclash secara manual adalah sebagai berikut:
 
-* Langkah pertama buka Openclash kemudian masuk ke menu Convig Manage.
-* Langkah kedua dibagian "Upload File" Type pilih "Config File" pilih file BOMBOM1.yaml / BOMBOM2.yaml yang telah kalian dowload kemudian pilih "UPLOUD"
-* Langkah ketiga dibagian "Upload File" Type pilih "Proxy Provider File". UPLOUD satu persatu folder yaml yang ada di dalam folder Proxy Provider yang telah kalian download sampai semuanya teruploud.
-* Langkah keempat dibagian "Upload File" Type pilih "Rule Provider File". UPLOUD satu persatu folder .yaml yang ada di dalam folder Rule Provider yang telah kalian download sampai semuanya teruploud.
-* Langkah kelima jika semua file telah selesai kalian uploud kemudian tekan COMMIT SETTINGS dan APPLY SETTINGS.
+* Langkah pertama buka `Openclash >> Convig Manage`.
+* Langkah kedua dibagian `Upload File` Type pilih `Config File` pilih file BOMBOM1.yaml / BOMBOM2.yaml yang telah kalian dowload kemudian pilih `UPLOUD`
+* Langkah ketiga dibagian `Upload File` Type pilih `Proxy Provider File`. `UPLOUD` satu persatu folder yaml yang ada di dalam folder Proxy Provider yang telah kalian download sampai semuanya teruploud.
+* Langkah keempat dibagian `Upload File` Type pilih `Rule Provider File`. `UPLOUD` satu persatu folder .yaml yang ada di dalam folder Rule Provider yang telah kalian download sampai semuanya teruploud.
+* Langkah kelima jika semua file telah selesai kalian uploud kemudian tekan `COMMIT SETTINGS >> APPLY SETTINGS`
 
 Contoh seperti gambar di bawah ini:
 
@@ -153,9 +153,8 @@ Contoh seperti gambar di bawah ini:
 
 ## Cara Mengisi/Mengganti Akun
 
-* Masuk ke menu Config Editor di Openclash
-* Kemudian pilih folder proxy_provider dan edit folder .yaml yang ada didalamnya
-* Ganti isi folder .yaml tersebut dengan akun kalian. Mulai dari ganti nama, server name, UUID, bug, Path dll.
+* Masuk ke menu `Config Editor` di Openclash kemudian pilih folder `proxy_provider` dan edit folder .yaml yang ada didalamnya.
+Ganti isi folder .yaml tersebut dengan akun kalian. Mulai dari ganti nama, server name, UUID, bug, Path dll.
 
 <img src="https://github.com/afanbombom/open_clash/blob/main/Asset/gantiakun.jpg" border="0">
 
@@ -425,7 +424,7 @@ Fungsi dari proxy_provider diatas:
 
 * singapuraorbit.yaml, singapuramifi.yaml Gunakan akun VVIP berlokasi SINGAPORE untuk memperoleh speed/traffic yang lebih bagus.
 
-* indonesiaorbit.yaml, singaapuramifi.yaml Gunakan akun VVIP berlokasi INDONESIA untuk keperluan akses websites/marketplace/live stream apps/Video on Demand yang mengharuskan memakai IP Address Publik Indonesia.
+* indonesiaorbit.yaml, indonesiamifi.yaml Gunakan akun VVIP berlokasi INDONESIA untuk keperluan akses websites/marketplace/live stream apps/Video on Demand yang mengharuskan memakai IP Address Publik Indonesia.
 
 Keterangan lebih lanjut:
 
