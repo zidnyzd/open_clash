@@ -138,9 +138,9 @@ Cara Uploud Backup Convig Openclash adalah sebagai berikut:
 Cara Uploud File Convig Openclash secara manual adalah sebagai berikut:
 
 * Langkah pertama buka `Openclash >> Convig Manage`.
-* Langkah kedua dibagian `Upload File` Type pilih `Config File` pilih file BOMBOM1.yaml / BOMBOM2.yaml yang telah kalian dowload kemudian pilih `UPLOUD`
-* Langkah ketiga dibagian `Upload File` Type pilih `Proxy Provider File`. `UPLOUD` satu persatu folder yaml yang ada di dalam folder Proxy Provider yang telah kalian download sampai semuanya teruploud.
-* Langkah keempat dibagian `Upload File` Type pilih `Rule Provider File`. `UPLOUD` satu persatu folder .yaml yang ada di dalam folder Rule Provider yang telah kalian download sampai semuanya teruploud.
+* Langkah kedua dibagian `Upload File Type` pilih `Config File` pilih file BOMBOM1.yaml / BOMBOM2.yaml yang telah kalian dowload kemudian pilih `UPLOUD`
+* Langkah ketiga dibagian `Upload File Type` pilih `Proxy Provider File`. `UPLOUD` satu persatu folder .yaml yang ada di dalam folder Proxy Provider yang telah kalian download sampai semuanya teruploud.
+* Langkah keempat dibagian `Upload File Type` pilih `Rule Provider File`. `UPLOUD` satu persatu folder .yaml yang ada di dalam folder Rule Provider yang telah kalian download sampai semuanya teruploud.
 * Langkah kelima jika semua file telah selesai kalian uploud kemudian tekan `COMMIT SETTINGS >> APPLY SETTINGS`
 
 Contoh seperti gambar di bawah ini:
