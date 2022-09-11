@@ -77,7 +77,7 @@ Modem E5372s        : WAN 2
 Modem tersebut mempunyai fungsi masing-masing agar memungkinkan mendapatkan performa internet dengan baik.
 
 MODEM | FUNGSI
------------- | -------------
+----- | ---------------
 WAN 1 | INJECT XL AKRAB
 WAN 2 | INJECT XL AKRAB
 
@@ -91,7 +91,7 @@ Untuk menentukan interface-name modem/WAN bisa melalui `LuCi > Network >> Interf
 Perhatikan pada gambar interface di atas, berikut adalah detailnya:
 
 MODEM | INTERFACE-NAME
------------- | -------------
+----- | --------------
 WAN 1 | usb0
 WAN 2 | wwan0
 
@@ -185,7 +185,7 @@ NAMA | ISP | INTERFACE-NAME
 -------------- | ---------------- | -------------
 SINGAPURA MIFI | SERVER SINGAPURA | wwan0
 
-contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaikan dengan interface yang terdapat pada device kalian masing-masing!!
+contoh isi akun untuk **`indonesia.yaml`** perhatikan juga interface-name! Sesuaikan dengan interface yang terdapat pada device kalian masing-masing!!
 
 ```yaml
 - name: "VVIP-ID1"
@@ -233,7 +233,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaik
   cipher: chacha20-ietf-poly1305
   password: passwordss
   udp: true
-  interface-name: eth1
+  interface-name: usb0
 ```
 * Shadowsocks dengan plugin obfs
 ```yaml
@@ -247,7 +247,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaik
   plugin-opts:
     mode: tls
     host: BUG.COM
-  interface-name: eth1
+  interface-name: usb0
 ```
 
 #### Vmess
@@ -272,7 +272,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaik
       Host: BUGSNI.COM
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-  interface-name: eth1
+  interface-name: usb0
 ```
 * Vmess websocket dengan BUG CDN (bolak-balik)
 ```yaml
@@ -294,7 +294,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaik
       Host: domainservermu.com
     max-early-data: 2048
     early-data-header-name: Sec-WebSocket-Protocol
-  interface-name: eth1
+  interface-name: usb0
 ```
 * Vmess gRPC bug SNI
 ```yaml
@@ -311,7 +311,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaik
   skip-cert-verify: true
   grpc-opts:
     grpc-service-name: iptunnelsvgrpc
-  interface-name: eth1
+  interface-name: usb0
 ```
 * Vmess gRPC bug CDN
 ```yaml
@@ -328,7 +328,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaik
   skip-cert-verify: false
   grpc-opts:
     grpc-service-name: iptunnelsvgrpc
-  interface-name: eth1
+  interface-name: usb0
 ```
 
 #### Snell
@@ -345,7 +345,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaik
   obfs-opts:
     mode: tls
     host: BUGSNI.COM
-  interface-name: eth1
+  interface-name: usb0
 ```
 
 #### Trojan
@@ -363,7 +363,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaik
     - h2
     - http/1.1
   skip-cert-verify: true
-  interface-name: eth1
+  interface-name: usb0
 ```
 * Trojan-go websocket bug CDN
 ```yaml
@@ -380,7 +380,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaik
     path: /iptunnelstrgo
     headers:
         Host: domainservermu.com
-  interface-name: eth1
+  interface-name: ussb0
 ```
 * Trojan gRPC bug SNI
 ```yaml
@@ -397,7 +397,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaik
   network: grpc
   grpc-opts:
     grpc-service-name: iptunnelstrojangrpc
-  interface-name: eth1
+  interface-name: usb0
 ```
 * Trojan gRPC bug CDN
 ```yaml
@@ -414,7 +414,7 @@ contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaik
   network: grpc
   grpc-opts:
     grpc-service-name: iptunnelstrojangrpc
-  interface-name: eth1
+  interface-name: usb0
 ```
 
 ### Edit Files Proxy Provider
