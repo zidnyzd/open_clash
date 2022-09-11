@@ -449,7 +449,7 @@ Mulai dari versi v0.44.22-beta pada branch dev, menu Manage Config support denga
 ## Overviews
 
 Pada Overviews kita bisa melihat sepintas status Openclash yang berjalan, status versi openclash terbaru dan menjalankan tools openclash yakni dengan klik `Enable Openclash` untuk start, klik `Disable Openclash` untuk stop.
-<img src="https://raw.githubusercontent.com/malikshi/open_clash/main/assets/overviews.jpg" border="0">
+<img src="https://github.com/afanbombom/open_clash/blob/main/Asset/overview_oc.jpg" border="0">
 
 # Setting Yacd
 
