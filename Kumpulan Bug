@@ -1,0 +1,192 @@
+BERIKUT ADALAH KUMPULAN BUG YANG SAYA TAU, BAGI KALIAN YG MEMBUTUHKAN SILAHKAN DICOBA MANA YANG WORK DI TKP KALIAN MASING-MASING..
+
+BUG AKRAB 
+1. maps.gstatic.com (SSL)
+2. mobilemaps-pa.googleapis.com (SSL)
+3. teams.microsoft.com (SSL)
+4. billing.zoomgov.com (ws+ssl)
+5. porting.zoomgov.com (ws+ssl)
+6. note0.microsoft.com
+7. teams.live.com (ssl)
+
+#Bug XL Flex & Unlimited Turbo
+
+⬇️Mode SSL/SNI (TKP Tertentu)⬇️ 
+↯
+↬Keluarga Whatsapp & Line (Flex):
+• ftp.line.com
+• w8.web.whatsapp.com
+• web.web.whatsapp.com
+• ww.web.whatsapp.com
+• w1.web.whatsapp.com
+• w2.web.whatsapp.com
+• w3.web.whatsapp.com
+• w4.web.whatsapp.com
+• w5.web.whatsapp.com
+
+Note: Gunakan APN xlunlimited & Cari IP Besar (Cth: 10.100)
+
+🔄Mode Bolak Balik🔄
+↯
+↬Keluarga Grab dan Zendesk (Unlimited Turbo):
+IP:
+• 162.159.128.7
+• 162.159.138.6
+
+Host:
+• zendesk1.shopee.tw
+• zendesk1.shopee.sg
+• zendesk1.shopee.ph
+• zendesk1.appsflyer.com 
+• zendesk1.grabtaxi.com 
+• zendesk4.grabtaxi.com 
+• support-whatsapp.zendesk.com 
+• account-gopay.midtrans.com 
+
+Bug Akrab Ping Imoetz & Tdk Malakz (Gk semua TKP)
+• 104.21.21.147
+• 172.67.199.34
+• 104.20.74.141
+• 104.20.75.141
+Tested Jatim & Jabar
+
+Bug XL Akrab Active ✓
+
+XL Akrab Maps : 
+maps.gstatic.com
+maps.google.com
+meet.google.com
+
+XL Akrab Conference :
+teams.microsoft.com
+
+XL Akrab Edukasi :
+info.udemy.com : 104.17.70.206
+www.udemy.com :104.16.66.85
+www.skillacademy.com : 104.18.25.139
+104.20.74.141
+104.20.75.141
+
+XL Akrab 
+Mode : Vmess
+Work : Jatim Jateng Jabar
+
+IP:
+104.18.211.56
+104.17.70.206
+104.18.11.39 
+104.18.10.39 
+104.26.5.10
+104.26.4.10
+104.26.4.126
+104.18.21.226
+
+Host :
+dev.appsflyer.com
+cdn.onlymega.com
+api.fastworldpay.com
+ltcminer.com
+
+Bug XL Akrab Active ✓
+XL Akrab Maps : 
+maps.gstatic.com
+maps.google.com
+meet.google.com
+
+XL Akrab Conference :
+teams.microsoft.com
+
+XL Akrab Edukasi :
+info.udemy.com : 104.17.70.206
+www.udemy.com :104.16.66.85
+www.skillacademy.com : 104.18.25.139
+104.20.74.141
+104.20.75.141XL Akrab 
+Mode : Vmess
+Work : Jatim Jateng Jabar
+
+IP:
+104.18.211.56
+104.17.70.206
+104.18.11.39 
+104.18.10.39 
+104.21.21.147
+172.67.199.34
+104.20.74.141
+104.20.75.141
+104.26.5.10
+104.26.4.10
+104.26.4.126
+104.18.21.226
+
+Host :
+dev.appsflyer.com
+cdn.onlymega.com
+apps.qiscus.com
+api.fastworldpay.com
+ltcminer.com
+
+
+bug akrab bolak balik (443/80)
+---------------------------------------------
+lms.uin-antasari.ac.id (172.64.201.17)
+kno2fy.com (104.18.11.39)
+cdn.onlymega.com (172.67.73.39)
+api.midtrans.com (104.17.3.81)
+---------------------------------------------
+
+
+XL FLEX ( GRAB/GOJEK/SHOPEE )
+HOST
+- www.wasa.com
+IP HOST
+- 104.18.30.185
+- 104.18.31.185
+SSH WS ✅
+VMESS WS ✅
+VLESS WS ✅
+TROJAN GO ✅
+
+
+AKRAB XL ALL TKP
+zt3a8nw0r75w.wpeproxy.com
+d2gaasaagm8n.wpeproxy.com
+ie6iq3ufftcz.wpeproxy.com
+access.zoominfo.com
+engage.zoominfo.com
+customers.zoominfo.com
+engineering.zoominfo.com
+SSH WS ✅
+VMESS WS ✅
+VLESS WS ✅
+TROJAN GO ✅
+
+
+Bug Gamemax
+1. tsel-game.bugs.systems
+    104.19.143.108
+2. riseofnowlin.mobi
+    104.21.65.170
+3. cdn.riseofnowlin.mobi
+    172.67.164.239
+4. www.mobile-legends.net
+    104.21.91.25
+5. mobile-legends.net
+     172.67.208.218
+6. msupport.pubg.com
+    162.159.138.6
+7. poe.garena.com
+    104.19.185.16
+8. ir.huya.com
+    104.17.202.159
+9. dashboard-dev.nimo.tv
+    104.18.23.187
+10. cf-vod.nimo.tv
+       104.18.21.219
+11. cftxvidtest.vod.nimo.tv
+       104.18.13.120
+12. cftxvid.vod.nimo.tv
+       104.18.12.120
+13. overrid.cf-hls.nimo.tv
+       104.18.29.170
+14. ovveride.cf-test.hls.nimo.tv
