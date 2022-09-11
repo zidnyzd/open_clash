@@ -123,7 +123,7 @@ Plugin ini adalah klien Clash yang bisa dijalankan di OpenWrt. Kompatibel dengan
 
 Cara Uploud Backup Convig Openclash adalah sebagai berikut:
 
-* Langkah pertama buka Openclash kemudian masuk ke menu Config Manage, uploud file backup yang telah kalian download seperti pada contoh gambar di bawah ini:
+* Langkah pertama buka `Openclash > Config Manage >> Backup File >>> UPLOUD` file backup yang telah kalian download seperti pada contoh gambar di bawah ini:
 
 <img src="https://github.com/afanbombom/open_clash/blob/main/Asset/uploud_backup1.jpg" border="0">
 
