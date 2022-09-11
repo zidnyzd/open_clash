@@ -155,7 +155,7 @@ Contoh seperti gambar di bawah ini:
 
 * Masuk ke menu Config Editor di Openclash
 * Kemudian pilih folder proxy_provider dan edit folder .yaml yang ada didalamnya
-* Ganti isi folder .yaml tersebetut dengan akun kalian. Mulai dari ganti nama, server name, UUID, BUG, Path dll.
+* Ganti isi folder .yaml tersebut dengan akun kalian. Mulai dari ganti nama, server name, UUID, bug, Path dll.
 
 <img src="https://github.com/afanbombom/open_clash/blob/main/Asset/gantiakun.jpg" border="0">
 
@@ -186,7 +186,7 @@ NAMA | ISP | INTERFACE-NAME
 -------------- | ---------------- | -------------
 SINGAPURA MIFI | SERVER SINGAPURA | wwan0
 
-contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name!
+contoh isi akun untuk **`vvip-id.yaml`** perhatikan juga interface-name! Sesuaikan dengan interface yang terdapat pada device kalian masing-masing!!
 
 ```yaml
 - name: "VVIP-ID1"
@@ -435,13 +435,6 @@ Convig bisa ditambahkan dengan pilihan sistem fallback dimana jika proxy list pe
 
 rule_direct.yaml bersifat offline dimana pengguna dapat mengedit traffic apa saja yang di direct/bypass (tidak menggunakan tunnel). Agar lebih mudah sebagai default sudah disetting bypass traffic Whatsapp dan traffic game Mobile Legends (port tcp & udp ingame) jadi untuk dilobby akan menggunakan traffic dari proxy-groups Gaming.
 
-# Setting Openclash App
-
-Setelah mengedit config main.yaml dan setiap file pada folder proxy_provider serta rule_direct.yaml pada folder rule_provider maka kita akan setting openclash via luCI. Silahkan Login LuCI dan masuk ke Services > Openclash
-
-## Global Setting
-
-Hasil settingan pada global setting akan meng-overide settingal awal pada file main.yaml.
 
 ### Operation Mode
 
