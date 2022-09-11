@@ -461,7 +461,9 @@ Yacd adalah yet another clash dashboard, yakni dashboard clash yang dapat diguna
 
 ## Proxies
 
-Kita akan mengatur toggle/pilihan proxies yang kan digunakan tiap proxy-groups.
+Kita bisa memilih/mengarahkan setiap rule ke-pilihan manapun sesuai keinginan. Ini sangat cocok untuk kalian yang menginginkan Pisah Traffic, Load Balancing, maupun ingin mengarahkan ke Direct sebuah Rule.
+
+Sebagai contoh ada pada gambar di bawah ini:
 
 ### Toggle Traffic `LOBBY-GAME`
 
