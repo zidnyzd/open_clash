@@ -107,7 +107,7 @@ Plugin ini adalah klien Clash yang bisa dijalankan di OpenWrt. Kompatibel dengan
 
 ==> Untuk pengguna 1 modem bisa langsung gunakan backup convig dibawah ini:
 
-(https://github.com/afanbombom/open_clash/blob/main/Convig%20Open%20Clash/Pengguna%202%20Modem/Uploud%20Backup%20Openclash/Backup-OpenClash-BOMBOM2.tar.gz)
+(https://github.com/afanbombom/open_clash/blob/main/Convig%20Open%20Clash/Pengguna%201%20Modem/Uploud%20Backup%20Openclash/Backup-OpenClash-BOMBOM1.tar.gz)
 
 => Atau kalian juga bisa uploud secara manual dan download bahannya di bawah ini:
 
