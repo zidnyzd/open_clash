@@ -1,0 +1,28 @@
+# Generated from https://github.com/afanbombom/open_clash
+# Yang mau gabung grub telegram (https://t.me/convigocbombom)
+# Yang berkenan traktir kopi bisa via Ovo/Dana 087758388833 a/n ANA AFANTO
+# TERIMAKASIH
+
+# Behavior: classical
+
+payload:
+  - DOMAIN-SUFFIX,cdnst.net
+  - DOMAIN-SUFFIX,cellmaps.com
+  - DOMAIN-SUFFIX,ekahau.cloud
+  - DOMAIN-SUFFIX,ekahau.com
+  - DOMAIN-SUFFIX,ookla.com
+  - DOMAIN-SUFFIX,ooklaserver.net
+  - DOMAIN-SUFFIX,pingtest.net
+  - DOMAIN-SUFFIX,speedtest.co
+  - DOMAIN-SUFFIX,speedtest.net
+  - DOMAIN-SUFFIX,speedtestcustom.com
+  - DOMAIN-SUFFIX,webtest.net
+  - DOMAIN-SUFFIX,speed.cloudflare.com
+  - DOMAIN-SUFFIX,speed.dler.io
+  - DOMAIN-SUFFIX,openspeedtest.com
+  - DOMAIN-SUFFIX,cachefly.net
+  - DOMAIN-KEYWORD,speedtest
+  - DOMAIN-KEYWORD,speedtestcustom
+  - DOMAIN-KEYWORD,openspeedtest
+  - DST-PORT,8080
+
